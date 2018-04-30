@@ -1,0 +1,35 @@
+﻿@using StudioZen.Models
+@model List<ClassInfo>
+
+<h1>@ViewBag.Title</h1>
+
+@if (Model.Count == 0)
+{
+	<p>No Classes yet</p>
+
+}
+
+<table class="table">
+
+	<tr>
+		<th>Name</th>
+		<th>StartDate</th>
+		<th>EndDate</th>
+		<th>MaximumSpots</th>
+	</tr>
+	
+	@foreach(var classinfo in Model){
+
+		<tr>
+			<td>@classinfo.Name</td>
+			<td>@classinfo.StartDate</td>
+			<td>@classinfo.EndDate</td>
+			<td>@classinfo.MaximumSpots</td>
+		</tr>
+	}
+
+</table>
+<br />
+<br />
+
+<p><a asp-controller="ClassInfo" asp-action="Add">Add Class</a></p>

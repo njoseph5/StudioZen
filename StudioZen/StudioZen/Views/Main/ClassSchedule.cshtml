@@ -1,31 +1,71 @@
-﻿
-@{
-}
+﻿<!--  jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 <h1>My classes</h1>
 
-<table border="2">
-	<tr>
-		<th>Time</th>
-		<th>Class</th>
-	</tr>
-	<tr>
-		<td>9 AM</td>
-		<td>Reformer session</td>
-	</tr>
-	<tr>
-		<td>10.30 AM</td>
-		<td>Cardio sculpt</td>
-	</tr>
-	<tr>
-		<td>11.30 AM</td>
-		<td>Inro session</td>
-	</tr>
-	<tr>
-		<td>2 PM </td>
-		<td>Reformer Pilates</td>
-	</tr>
-	<tr>
-		<td>3.30 PM</td>
-		<td>Piyo</td>
-	</tr>
-</table>
+<div class="bootstrap-iso">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+
+				<!-- Form code begins -->
+				<form method="post">
+					<div class="form-group">
+						<!-- Date input -->
+						<label class="control-label" for="date">Date</label>
+						<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+					</div>
+					<div class="form-group">
+						<!-- Submit button -->
+						<button class="btn btn-primary " name="submit" type="submit">Submit</button>
+					</div>
+					<table border="2">
+						<tr>
+							<th colspan="3">Saturday April 14</th>
+						</tr>
+
+						<tr>
+							<td>9 AM</td>
+							<td>Reformer session</td>
+							<td><input type="submit" value="Book Class" /></td>
+						</tr>
+						<tr>
+							<td>10.30 AM</td>
+							<td>Cardio sculpt</td>
+							<td><input type="submit" value="Book Class" /></td>
+						</tr>
+						<tr>
+							<td>11.30 AM</td>
+							<td>Inro session</td>
+							<td><input type="submit" value="Book Class" /></td>
+						</tr>
+						<tr>
+							<td>2 PM </td>
+							<td>Reformer Pilates</td>
+							<td><input type="submit" value="Book Class" /></td>
+						</tr>
+						<tr>
+							<td>3.30 PM</td>
+							<td>Piyo</td>
+							<td><input type="submit" value="Book class" /></td>
+						</tr>
+					</table>
+
+
+				</form>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+

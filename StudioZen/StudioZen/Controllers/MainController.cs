@@ -29,7 +29,10 @@ namespace StudioZen.Controllers
 		{
 			return View();
 		}
-			
+		public IActionResult BookClass()
+		{
+			return View();
+		}
 	}
 
 }
